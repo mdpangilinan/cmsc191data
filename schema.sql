@@ -2,7 +2,7 @@ CREATE DATABASE IF NOT EXISTS business;
 USE business;
 
 CREATE TABLE IF NOT EXISTS customer (
-	customerid INT,
+	customerid INT, /*NUMBER ASSIGNED*/
 	fname VARCHAR(50),
 	lname VARCHAR(50),
 	email VARCHAR(50),
@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS customer (
 );
 
 CREATE TABLE IF NOT EXISTS branch (
-	branchid INT,
+	branchid INT, /*NUMBER ASSIGNED*/
 	name VARCHAR(50),
 	city VARCHAR(50),
 	country VARCHAR(50),
@@ -20,8 +20,8 @@ CREATE TABLE IF NOT EXISTS branch (
 );
 
 CREATE TABLE IF NOT EXISTS branchcustomer (
-	branchid INT NOT NULL,
-	customerid INT NOT NULL,
+	branchid INT NOT NULL, /*NUMBER ASSIGNED*/
+	customerid INT NOT NULL, /*0-200K*/
 	dateopened DATE,
 	FOREIGN KEY (branchid) REFERENCES branch (branchid),
 	FOREIGN KEY (customerid) REFERENCES customer (customerid),
@@ -29,8 +29,8 @@ CREATE TABLE IF NOT EXISTS branchcustomer (
 );
 
 CREATE TABLE IF NOT EXISTS account (
-	accountno INT,
-	customerid INT NOT NULL,
+	accountno INT, /*NUMBER ASSIGNED*/
+	customerid INT NOT NULL, /*0-200K*/
 	amount VARCHAR(50),
 	date DATE,
 	type VARCHAR(50),
