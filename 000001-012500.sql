@@ -1,3 +1,4 @@
+-- 000001 - 012500  clouie
  insert into customer (customerid, fname, lname, email, gender, country) values
  (1, 'Colan', 'Metzke', 'cmetzke0@dmoz.org', 'Male', 'Ukraine'),
  (2, 'Oswell', 'Harcarse', 'oharcarse1@omniture.com', 'Male', 'Greece'),
