@@ -13,8 +13,8 @@ CREATE TABLE IF NOT EXISTS customer (
 
 CREATE TABLE IF NOT EXISTS branch (
 	branchid INT, /*NUMBER ASSIGNED*/
-	name VARCHAR(50),
-	city VARCHAR(50),
+	name VARCHAR(255),
+	city VARCHAR(100),
 	country VARCHAR(50),
 	PRIMARY KEY (branchid)
 )DEFAULT CHARSET=utf8mb4;
