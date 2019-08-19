@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS customer (
 	gender VARCHAR(50),
 	country VARCHAR(50),
 	PRIMARY KEY (customerid)
-);
+)DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE IF NOT EXISTS branch (
 	branchid INT, /*NUMBER ASSIGNED*/
@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS branch (
 	city VARCHAR(50),
 	country VARCHAR(50),
 	PRIMARY KEY (branchid)
-);
+)DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE IF NOT EXISTS branchcustomer (
 	branchid INT NOT NULL, /*NUMBER ASSIGNED*/
